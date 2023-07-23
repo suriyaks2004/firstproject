@@ -1,0 +1,123 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+.about-page{
+	width: 100vw;
+	height: 120vh;
+	background-color: wheat;
+	position: relative;
+}
+.slide-box{
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	top: 40px;
+
+	display: flex;
+	gap : 10px;
+}
+.img{
+	display: flex;
+	gap: 10px;
+	position: absolute;
+	width: 100vw;
+	height: 400px;
+	overflow-x: hidden ;
+}
+.img img{
+	width: 500px;
+	height: 400px;
+ 	animation: slide 60s infinite;
+ 	border-radius: 2px;
+}
+.about-page-title{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	position: absolute;
+	top: 450px;
+	
+	font-weight: 900;
+}
+.p{
+	margin: 30px 0px 0px 0px;
+	word-spacing: 10px;
+	width: 900px;
+}
+span{
+	padding-top: 60px;
+	font-size: 30px;
+	padding-left: 366px;
+}
+footer{
+	width: 100vw;
+	height: 200px;
+	background-color: skyblue;
+	position: relative;
+}
+.h3{
+	font-size: 20px;
+	position: absolute;
+	left: 20px;
+	top: 5px;
+	
+}
+.h4{
+	position: absolute;
+	left: 20px;
+	top: 50px;
+	margin: 10px;
+}
+.h4-2{
+	position: absolute;
+	top: 50px;
+	left: 200px;
+	margin: 10px;
+}
+.h4-3{
+	position: absolute;
+	top: 50px;
+	left: 350px;
+	margin: 10px;
+}
+.button-1{
+	position: absolute;
+	top: 50px;
+	left: 800px;
+	margin: 10px;
+	width: 100px ;
+	height: 50px;
+	border-radius: 20px;
+	background-color: currentColor;
+}
+.button-1 a {
+ 	font-size: 20px;
+	text-decoration: none;
+	color: wheat;
+}
+.button-2{
+	position: absolute;
+	top: 50px;
+	left: 1150px;
+	margin: 10px;
+	width: 100px ;
+	height: 50px;
+	border-radius: 20px;
+	background-color: currentColor;
+}
+.button-2 a {
+ 	font-size: 20px;
+	text-decoration: none;
+	color: wheat;
+}
+@keyframes slide{
+	0%{
+		transform: translateX(0px) ;
+	}
+	100%{
+		transform: translateX(calc(-250px * 9));
+		}
+}
